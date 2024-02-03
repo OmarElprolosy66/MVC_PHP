@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'MVC\\' => array($baseDir . '/app'),
+    'Dcblogdev\\PdoWrapper\\' => array($vendorDir . '/dcblogdev/pdo-wrapper/src'),
 );

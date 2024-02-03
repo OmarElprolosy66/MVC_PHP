@@ -11,12 +11,20 @@ class ComposerStaticInitc86eb74c13884e5e18c51e4d1289fea2
         array (
             'MVC\\' => 4,
         ),
+        'D' => 
+        array (
+            'Dcblogdev\\PdoWrapper\\' => 21,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'MVC\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'Dcblogdev\\PdoWrapper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dcblogdev/pdo-wrapper/src',
         ),
     );
 

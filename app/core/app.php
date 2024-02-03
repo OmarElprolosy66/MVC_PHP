@@ -29,7 +29,7 @@ class app
 
     private function render(): void
     {
-        $controller = "MVC\\Controllers\\" . $this->m_controller; //class
+        $controller = "MVC\\Controllers\\" . $this->m_controller; // class
 
         if (class_exists($controller)) {
             $controllerInstance = new $controller();

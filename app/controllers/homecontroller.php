@@ -7,6 +7,9 @@ class homecontroller extends controller
 {
     public function index(): void
     {
-        $this->view("home/index", ["title" => "Home index"]);
+        // database connection example
+        $data = $this->db()->rows("SELECT * FROM `user`"); // fetch each row as an object
+
+        $this->view("home/index", ["title" => "Home index", "data" => $data]);
     }
 }
