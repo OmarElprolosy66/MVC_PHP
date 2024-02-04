@@ -5,6 +5,7 @@
         }
     },
     "require": {
-        "dcblogdev/pdo-wrapper": "^2.0"
+        "dcblogdev/pdo-wrapper": "^2.0",
+        "respect/validation": "^2.3"
     }
 }
