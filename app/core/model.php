@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 namespace MVC\Core;
 
 use Dcblogdev\PdoWrapper\Database;
@@ -9,14 +11,14 @@ class model
     {
         $options = [
             //required
-            'username' => 'root',
-            'database' => 'proone',
+            'username' => USER_NAME,
+            'database' => DATABASE_NAME,
             //optional
-            'password' => '',
-            'type' => 'mysql',
-            'charset' => 'utf8',
-            'host' => 'localhost',
-            'port' => '3306'
+            'password' => PASSWORD,
+            'type'     => DATABASE_TYPE,
+            'charset'  => CHARSET,
+            'host'     => SERVER,
+            'port'     => PORT
         ];
 
         $db = new Database($options);

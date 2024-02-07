@@ -9,6 +9,16 @@ define("MODELS", APP . DIR_SEPARAT . "models" . DIR_SEPARAT);
 define("CONFIG", APP . DIR_SEPARAT . "config" . DIR_SEPARAT);
 define("CONTROLLERS", APP . DIR_SEPARAT . "controllers" . DIR_SEPARAT);
 
+// Configurations
+define("PORT", "3306");
+define("SERVER", "localhost");
+define("USER_NAME", "root");
+define("PASSWORD", "");
+define("CHARSET", "utf8");
+define("DATABASE_NAME", "proone");
+define("DATABASE_TYPE", "mysql");
+define("DOMAIN_NAME", "http://mvc.test/");
+
 require_once "../vendor/autoload.php";
 
 $app = new MVC\Core\app();

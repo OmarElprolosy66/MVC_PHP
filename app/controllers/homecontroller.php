@@ -1,6 +1,9 @@
 <?php
+declare(strict_types=1);
+
 namespace MVC\Controllers;
 
+use MVC\Core\Helpers;
 use MVC\Models\user;
 use MVC\Core\Session;
 use MVC\Core\controller;
@@ -27,6 +30,11 @@ class homecontroller extends controller
         $this->view("home/login", ["title" => "login"]);
     }
 
+    public function logout(): void
+    {
+        Session::destroy();
+    }
+
     public function postlogin(): void
     {
         $email = isset($_POST['email']) ? $_POST['email'] : '';
@@ -42,7 +50,7 @@ class homecontroller extends controller
             // if ($data !== false) {
             // User exists in the database
             Session::set("user", $data);
-            header("Location: ../user/index");
+            Helpers::redirect("user/index");
             exit();
             // } else {
             //     // User not found in the database
