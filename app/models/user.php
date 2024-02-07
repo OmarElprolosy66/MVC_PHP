@@ -5,9 +5,6 @@ use MVC\Core\model;
 
 class user extends model
 {
-    /**
-     * @return array An array of objects representing rows from the `user` table.
-     */
     public function getAllUsers()
     {
         return model::db()->rows("SELECT * FROM `user`");

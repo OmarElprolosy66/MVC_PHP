@@ -9,7 +9,7 @@ use MVC\Core\Session;
 use MVC\Core\controller;
 use Respect\Validation\Validator as v;
 
-class homecontroller extends controller
+class HomeController extends controller
 {
     public function __construct()
     {

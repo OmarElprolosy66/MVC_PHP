@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace MVC\Core;
 
-class app
+class App
 {
     private array $m_params;
     private string $m_method;
@@ -11,44 +11,70 @@ class app
 
     public function __construct()
     {
-        $this->url();
+        $this->URL();
         $this->render();
     }
 
-    private function url(): void
+    /**
+     * Parse the URL and set controller, method, and parameters.
+     */
+    public function URL(): void
     {
-        $queryString = filter_input(INPUT_SERVER, 'QUERY_STRING', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+        $queryString = filter_input(INPUT_SERVER, "QUERY_STRING", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-        if (!empty($queryString)) {
-            $urlParts = explode('/', $queryString);
-
-            $this->m_controller = $this->getControllerName($urlParts);
-            $this->m_method = $this->getMethodName($urlParts);
-            $this->m_params = $this->getParameters($urlParts);
-        } else {
+        if (empty($queryString)) {
             $this->m_controller = "HomeController";
             $this->m_method = "index";
             $this->m_params = [];
+        } else {
+            $urlParts = explode("/", $queryString);
+
+            $this->m_controller = $this->getController($urlParts);
+            $this->m_method = $this->getMethod($urlParts);
+            $this->m_params = $this->getParam($urlParts);
         }
     }
 
-    private function getControllerName(array &$urlParts): string
+    /**
+     * Get the controller name.
+     *
+     * @param array $urlParts
+     *
+     * @return string
+     */
+    public function getController(array &$urlParts): string
     {
-        $controller = array_shift($urlParts);
-        return $controller ? $controller . "controller" : "homecontroller";
+        return ucfirst(array_shift($urlParts) ?: "home") . "Controller";
     }
 
-    private function getMethodName(array &$urlParts): string
+    /**
+     * Get the method name.
+     *
+     * @param array $urlParts
+     *
+     * @return string
+     */
+    public function getMethod(array &$urlParts): string
     {
         return array_shift($urlParts) ?: "index";
     }
 
-    private function getParameters(array $urlParts): array
+    /**
+     * Get the parameters.
+     *
+     * @param array $urlParts
+     *
+     * @return array
+     */
+    public function getParam(array $urlParts): array
     {
         return array_values($urlParts);
     }
 
-    private function render(): void
+    /**
+     * Render the requested controller and method.
+     */
+    public function render(): void
     {
         $controllerClass = "MVC\\Controllers\\" . $this->m_controller;
 
@@ -58,10 +84,10 @@ class app
             if (method_exists($controllerInstance, $this->m_method)) {
                 $controllerInstance->{$this->m_method}(...$this->m_params);
             } else {
-                echo "Method does not exist.";
+                echo "Method '{$this->m_method}' not found";
             }
         } else {
-            echo "Controller does not exist.";
+            echo "Class '{$controllerClass}' does not exist";
         }
     }
 }

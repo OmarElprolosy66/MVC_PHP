@@ -5,7 +5,7 @@ use MVC\Models\user;
 use MVC\Core\Session;
 use MVC\Core\controller;
 
-class usercontroller extends controller
+class UserController extends controller
 {
     public function __construct()
     {

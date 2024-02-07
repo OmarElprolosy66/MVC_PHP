@@ -5,24 +5,29 @@ namespace MVC\Core;
 
 use Dcblogdev\PdoWrapper\Database;
 
-class model
+class Model
 {
+    /**
+     * Get a new instance of the database.
+     *
+     * @return Database
+     */
     public static function db(): Database
     {
+        $dbConfig = require CONFIG . "database.php";
+
         $options = [
             //required
-            'username' => USER_NAME,
-            'database' => DATABASE_NAME,
+            'username' => $dbConfig["user_name"] ?? null,
+            'database' => $dbConfig["database_name"] ?? null,
             //optional
-            'password' => PASSWORD,
-            'type'     => DATABASE_TYPE,
-            'charset'  => CHARSET,
-            'host'     => SERVER,
-            'port'     => PORT
+            'password' => $dbConfig["password"] ?? null,
+            'type'     => $dbConfig["database_type"] ?? null,
+            'charset'  => $dbConfig["charset"] ?? null,
+            'host'     => $dbConfig["server"] ?? null,
+            'port'     => $dbConfig["port"] ?? null,
         ];
 
-        $db = new Database($options);
-
-        return $db;
+        return new Database($options);
     }
 }
