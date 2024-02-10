@@ -14,7 +14,7 @@ class user extends model
     {
         $query = "SELECT * FROM `user` WHERE `email` = :email AND `password` = :password";
         $params = [
-            'email' => $email,
+            'email'    => $email,
             'password' => $password,
         ];
 

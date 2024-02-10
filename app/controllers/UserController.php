@@ -1,5 +1,5 @@
 <?php
-declare(strict_types= 1);
+declare(strict_types=1);
 
 namespace MVC\Controllers;
 
@@ -24,6 +24,8 @@ class UserController extends controller
     public function logout(): void
     {
         Session::destroy();
+
+        $this->view("user/login.php", ["title" => "login"]);
     }
 
     public function postlogin(): void

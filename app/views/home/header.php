@@ -160,8 +160,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_01.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_01.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Spa</span>
@@ -178,8 +178,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_02.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_02.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Beauty</span>
@@ -196,8 +196,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_03.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_03.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Beauty</span>
@@ -214,8 +214,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_04.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_04.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Spa</span>
@@ -235,8 +235,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_05.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_05.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Fashion</span>
@@ -253,8 +253,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_06.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_06.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Collections</span>
@@ -271,8 +271,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_07.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_07.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Fashion</span>
@@ -290,8 +290,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_08.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_08.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Trends</span>
@@ -311,8 +311,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_09.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_09.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Tourism</span>
@@ -329,8 +329,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_11.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_11.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Travel</span>
@@ -347,8 +347,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_12.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_12.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">City Tours</span>
@@ -365,8 +365,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_13.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_13.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Tourism</span>
@@ -386,8 +386,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_14.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_14.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Places</span>
@@ -404,8 +404,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_15.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_15.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Designs</span>
@@ -422,8 +422,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_16.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_16.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Minimalism</span>
@@ -441,8 +441,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_17.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_17.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Furnishings</span>
@@ -462,8 +462,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_18.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_18.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Vegetables</span>
@@ -480,8 +480,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_19.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_19.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Restaurants</span>
@@ -498,8 +498,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_20.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_20.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Meat foods</span>
@@ -516,8 +516,8 @@
                                                             <div class="blog-box">
                                                                 <div class="post-media">
                                                                     <a href="single" title="">
-                                                                        <img src="<?=FRONT; ?>front/upload/menu_21.jpg" alt=""
-                                                                            class="img-fluid">
+                                                                        <img src="<?= FRONT; ?>front/upload/menu_21.jpg"
+                                                                            alt="" class="img-fluid">
                                                                         <div class="hovereffect">
                                                                         </div><!-- end hover -->
                                                                         <span class="menucat">Pastas</span>

@@ -1,5 +1,5 @@
 <?php
-declare(strict_types= 1);
+declare(strict_types=1);
 
 namespace MVC\Controllers;
 
@@ -13,8 +13,9 @@ class AdminController extends Controller
         Session::start();
         $user = Session::get("user");
 
-        if (empty($user)){
-            echo "class is not accessible"; die;
+        if (empty($user)) {
+            echo "class is not accessible";
+            die;
         }
     }
 
@@ -22,4 +23,4 @@ class AdminController extends Controller
     {
         $this->view("admin/index.php", ["title" => "Admin"]);
     }
-}    
+}
