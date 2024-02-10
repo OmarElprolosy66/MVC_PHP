@@ -11,61 +11,13 @@ use Respect\Validation\Validator as v;
 
 class HomeController extends controller
 {
-    public function __construct()
-    {
-        Session::start();
-    }
-
     public function index(): void
     {
-        // database connection example
-        $user = new user();
-        $data = $user->getAllUsers();
-
-        $this->view("home/index", ["title" => "Home index", "data" => $data]);
+        $this->view("home/index.php", ["title" => "Home index"]);
     }
 
-    public function login(): void
+    public function single(): void
     {
-        $this->view("home/login", ["title" => "login"]);
-    }
-
-    public function logout(): void
-    {
-        Session::destroy();
-    }
-
-    public function postlogin(): void
-    {
-        $email = isset($_POST['email']) ? $_POST['email'] : '';
-        $password = isset($_POST['password']) ? $_POST['password'] : '';
-
-        $emailValidator = V::email()->notEmpty();
-        $passwordValidator = V::stringType()->length(3, null)->numericVal();
-
-        if ($emailValidator->validate($email) && $passwordValidator->validate($password)) {
-            $user = new user();
-            $data = $user->getUser($_POST["email"], $_POST["password"]);
-
-            // if ($data !== false) {
-            // User exists in the database
-            Session::set("user", $data);
-            Helpers::redirect("user/index");
-            exit();
-            // } else {
-            //     // User not found in the database
-            //     echo "User not found.";
-            // }
-        } else {
-            echo "Validation failed!";
-
-            $emailErrors = $emailValidator->reportError($email);
-            $passwordErrors = $passwordValidator->reportError($password);
-
-            echo "<pre>";
-            print_r($emailErrors);
-            print_r($passwordErrors);
-            echo "</pre>";
-        }
+        $this->view("home/single.php", ["title" => "single"]);
     }
 }

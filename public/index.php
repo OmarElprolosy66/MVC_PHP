@@ -17,7 +17,10 @@ define("PASSWORD", "");
 define("CHARSET", "utf8");
 define("DATABASE_NAME", "proone");
 define("DATABASE_TYPE", "mysql");
-define("DOMAIN_NAME", "http://mvc.test/");
+define("DOMAIN_NAME", "http://news.test");
+
+// views front assets path
+define("FRONT", DOMAIN_NAME . "/");
 
 require_once "../vendor/autoload.php";
 

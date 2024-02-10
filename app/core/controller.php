@@ -16,7 +16,7 @@ class Controller
         if (!empty($params))
             extract($params);
 
-        $viewFilePath = VIEWS . $path . ".php";
+        $viewFilePath = VIEWS . $path;
 
         if (file_exists($viewFilePath)) {
             require $viewFilePath;
