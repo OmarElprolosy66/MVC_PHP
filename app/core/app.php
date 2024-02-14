@@ -1,14 +1,34 @@
 <?php
+
 declare(strict_types=1);
 
 namespace MVC\Core;
 
+/**
+ * Class App
+ * @package MVC\Core
+ */
 class App
 {
+    /**
+     * @var array Stores the parameters parsed from the URL.
+     */
     private array $m_params;
+
+    /**
+     * @var string Stores the request method (GET, POST, etc.).
+     */
     private string $m_method;
+
+    /**
+     * @var string Stores the name of the controller to be used.
+     */
     private string $m_controller;
 
+    /**
+     * App constructor.
+     * Parses the URL and sets controller, method, and parameters.
+     */
     public function __construct()
     {
         $this->URL();
@@ -18,7 +38,7 @@ class App
     /**
      * Parse the URL and set controller, method, and parameters.
      */
-    public function URL(): void
+    private function URL(): void
     {
         $queryString = filter_input(INPUT_SERVER, "QUERY_STRING", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
@@ -38,11 +58,10 @@ class App
     /**
      * Get the controller name.
      *
-     * @param array $urlParts
-     *
-     * @return string
+     * @param array $urlParts The URL parts.
+     * @return string The controller name.
      */
-    public function getController(array &$urlParts): string
+    private function getController(array &$urlParts): string
     {
         return ucfirst(array_shift($urlParts) ?: "home") . "Controller";
     }
@@ -50,11 +69,10 @@ class App
     /**
      * Get the method name.
      *
-     * @param array $urlParts
-     *
-     * @return string
+     * @param array $urlParts The URL parts.
+     * @return string The method name.
      */
-    public function getMethod(array &$urlParts): string
+    private function getMethod(array &$urlParts): string
     {
         return array_shift($urlParts) ?: "index";
     }
@@ -62,11 +80,10 @@ class App
     /**
      * Get the parameters.
      *
-     * @param array $urlParts
-     *
-     * @return array
+     * @param array $urlParts The URL parts.
+     * @return array The parameters.
      */
-    public function getParam(array $urlParts): array
+    private function getParam(array $urlParts): array
     {
         return array_values($urlParts);
     }
@@ -74,7 +91,7 @@ class App
     /**
      * Render the requested controller and method.
      */
-    public function render(): void
+    private function render(): void
     {
         $controllerClass = "MVC\\Controllers\\" . $this->m_controller;
 

@@ -1,16 +1,35 @@
 <?php
+
+declare(strict_types=1);
+
 namespace MVC\Models;
 
-use MVC\Core\model;
+use MVC\Core\Model;
 
-class user extends model
+/**
+ * Class User
+ * @package MVC\Models
+ */
+class User extends Model
 {
+    /**
+     * Get all users.
+     *
+     * @return object The users.
+     */
     public function getAllUsers()
     {
-        return model::db()->rows("SELECT * FROM `user`");
+        return Model::db()->rows("SELECT * FROM `user`");
     }
 
-    public function getUser(string $email, string $password): object
+    /**
+     * Get user by email and password.
+     *
+     * @param string $email The user's email.
+     * @param string $password The user's password.
+     * @return object|null The user if found, otherwise null.
+     */
+    public function getUser(string $email, string $password): ?object
     {
         $query = "SELECT * FROM `user` WHERE `email` = :email AND `password` = :password";
         $params = [
@@ -18,6 +37,6 @@ class user extends model
             'password' => $password,
         ];
 
-        return model::db()->row($query, $params);
+        return Model::db()->row($query, $params);
     }
 }

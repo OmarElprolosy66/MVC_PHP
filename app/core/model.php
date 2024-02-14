@@ -1,16 +1,21 @@
 <?php
+
 declare(strict_types=1);
 
 namespace MVC\Core;
 
 use Dcblogdev\PdoWrapper\Database;
 
+/**
+ * Class Model
+ * @package MVC\Core
+ */
 class Model
 {
     /**
      * Get a new instance of the database.
      *
-     * @return Database
+     * @return Database The database instance.
      */
     public static function db(): Database
     {

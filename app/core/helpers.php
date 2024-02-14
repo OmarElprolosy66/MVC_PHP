@@ -1,14 +1,20 @@
 <?php
+
 declare(strict_types=1);
 
 namespace MVC\Core;
 
+/**
+ * Class Helpers
+ * @package MVC\Core
+ */
 class Helpers
 {
     /**
      * Redirect to a specified path.
      *
-     * @param string $path
+     * @param string $path The path to redirect to.
+     * @throws \InvalidArgumentException If the provided path is empty.
      */
     public static function redirect(string $path): void
     {

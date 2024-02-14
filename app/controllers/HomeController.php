@@ -1,19 +1,30 @@
 <?php
+
 declare(strict_types=1);
 
 namespace MVC\Controllers;
 
-use MVC\Core\controller;
+use MVC\Core\Controller;
 
-class HomeController extends controller
+/**
+ * Class HomeController
+ * @package MVC\Controllers
+ */
+class HomeController extends Controller
 {
+    /**
+     * Display the index page.
+     */
     public function index(): void
     {
-        $this->view("home/index.php", ["title" => "Home index"]);
+        $this->view("home/index.php", ["title" => "Home Index"]);
     }
 
+    /**
+     * Display the single page.
+     */
     public function single(): void
     {
-        $this->view("home/single.php", ["title" => "single"]);
+        $this->view("home/single.php", ["title" => "Single Page"]);
     }
 }

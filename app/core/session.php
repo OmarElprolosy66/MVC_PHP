@@ -1,6 +1,11 @@
 <?php
+
 namespace MVC\Core;
 
+/**
+ * Class Session
+ * @package MVC\Core
+ */
 class Session
 {
     /**
@@ -14,10 +19,10 @@ class Session
     /**
      * Get a session variable value.
      *
-     * @param string $key
-     * @param mixed $default
+     * @param string $key The key of the session variable.
+     * @param mixed $default The default value if the session variable is not set.
      *
-     * @return mixed
+     * @return mixed The value of the session variable.
      */
     public static function get(string $key, mixed $default = null): mixed
     {
@@ -27,8 +32,8 @@ class Session
     /**
      * Set a session variable.
      *
-     * @param string $key
-     * @param mixed $value
+     * @param string $key The key of the session variable.
+     * @param mixed $value The value to set.
      */
     public static function set(string $key, mixed $value): void
     {
@@ -38,7 +43,7 @@ class Session
     /**
      * Delete a session variable.
      *
-     * @param string $key
+     * @param string $key The key of the session variable to delete.
      */
     public static function delete(string $key): void
     {
