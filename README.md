@@ -31,7 +31,3 @@ The directory structure of the News Web Application is as follows:
 4. Create view files in the `app/views` directory to render HTML content.
 5. Use session management and user authentication utilities provided by the `Session` class.
 6. Customize the application by extending core classes and adding additional functionality as needed.
-
-## Contributing
-
-Contributions to the News Web Application are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on GitHub.
