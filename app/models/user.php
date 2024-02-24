@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace MVC\Models;
 
 use MVC\Core\Model;
+use SensitiveParameter;
 
 /**
  * Class User
@@ -29,7 +30,7 @@ class User extends Model
      * @param string $password The user's password.
      * @return object|null The user if found, otherwise null.
      */
-    public function getUser(string $email, string $password): ?object
+    public function getUser(string $email, #[SensitiveParameter] string $password): ?object
     {
         $query = "SELECT * FROM `user` WHERE `email` = :email AND `password` = :password";
         $params = [
