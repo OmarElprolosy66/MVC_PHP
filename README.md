@@ -36,5 +36,3 @@ The directory structure of the News Web Application is as follows:
 ## Contributing
 
 Contributions to the News Web Application are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on GitHub.
-=======
->>>>>>> c804604e65cdbf358de506ea06aa0019c5e73b10
